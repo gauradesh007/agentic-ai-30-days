@@ -192,7 +192,16 @@ for step in range(MAX_STEPS):
 
     decision = choose_next_action(json_objects, tool_results)
 
+    if not decision:
+        print("Controller could not determine next action.")
+        break
+
     action = decision.get("action")
+
+    if not action:
+        print("No action found in decision.")
+        break
+
     action = TOOL_ALIASES.get(action, action)
 
     if action == "final":
