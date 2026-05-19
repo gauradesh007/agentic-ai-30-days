@@ -75,24 +75,6 @@ def call_ollama(messages):
 
     return response.json()["message"]["content"]
 
-def choose_next_action(json_objects, tool_results):
-    for obj in json_objects:
-        action = obj.get("action")
-        action = TOOL_ALIASES.get(action, action)
-
-        if action in required_tools and action not in tool_results:
-            obj["action"] = action
-            return obj
-
-    for tool in required_tools:
-        if tool not in tool_results:
-            if tool == "current_date":
-                return {"action": "current_date", "input": ""}
-            if tool == "calculator":
-                return {"action": "calculator", "input": "0.18 * 4500"}
-
-    return {"action": "final", "answer": "done"}    
-
 # -------------------
 # JSON CLEANER
 # -------------------
@@ -173,6 +155,23 @@ Rules:
 # -------------------
 # AGENT LOOP
 # -------------------
+def choose_next_action(json_objects, tool_results):
+    for obj in json_objects:
+        action = obj.get("action")
+        action = TOOL_ALIASES.get(action, action)
+
+        if action in required_tools and action not in tool_results:
+            obj["action"] = action
+            return obj
+
+    for tool in required_tools:
+        if tool not in tool_results:
+            if tool == "current_date":
+                return {"action": "current_date", "input": ""}
+            if tool == "calculator":
+                return {"action": "calculator", "input": "0.18 * 4500"}
+
+    return {"action": "final", "answer": "done"}    
 
 MAX_STEPS = 5
 tool_results = {}
