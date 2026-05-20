@@ -3,6 +3,7 @@
 This repository documents my hands-on 30-day journey to learn, build, and deploy Agentic AI systems from scratch.
 
 The focus of this journey is not just using AI frameworks, but understanding how AI agents actually work internally through:
+
 - tool execution
 - workflow orchestration
 - controller logic
@@ -11,6 +12,8 @@ The focus of this journey is not just using AI frameworks, but understanding how
 - reasoning-aware workflows
 - ReAct architecture
 - local LLM systems
+- memory-aware reasoning
+- controller-enforced reliability
 
 ---
 
@@ -24,6 +27,7 @@ By the end of 30 days, I aim to independently:
 - orchestrate autonomous workflows
 - build reliable controller architectures
 - deploy production-ready AI applications
+- create real-world workflow intelligence systems
 
 ---
 
@@ -47,6 +51,7 @@ By the end of 30 days, I aim to independently:
 | Day 2 | Multi-Tool Controller Agent | ✅ |
 | Day 3 | Stateful Retry Agent | ✅ |
 | Day 4 | ReAct Workflow Agent | ✅ |
+| Day 5 | Memory-Aware ReAct Agent | ✅ |
 
 ---
 
@@ -64,6 +69,12 @@ Built a local AI agent using:
 - JSON parsing frequently fails
 - the controller loop is the real agent
 - tools improve reliability
+
+## Important Insight
+
+A model is not the agent.
+
+The controller and workflow orchestration are the actual intelligence system.
 
 ---
 
@@ -213,6 +224,77 @@ Reasoning traces improve explainability, but reasoning itself still requires val
 
 ---
 
+# Day 5 — Memory-Aware ReAct Agent
+
+Built a memory-aware AI workflow agent capable of:
+- storing workflow memory
+- retrieving previous observations
+- using memory during reasoning
+- preventing repeated actions
+- maintaining workflow continuity
+- improving controller-guided execution
+
+## New Architectural Capabilities
+- memory_store workflow memory
+- memory retrieval
+- memory updates
+- memory-conditioned reasoning
+- controller-guided memory utilization
+- observation persistence across steps
+
+## Memory Workflow
+
+User Question
+      ↓
+Memory Retrieval
+      ↓
+Thought
+      ↓
+Action
+      ↓
+Tool Execution
+      ↓
+Observation
+      ↓
+Memory Update
+      ↓
+Next Thought
+      ↓
+Final Answer
+
+## Example Memory State
+
+memory_store = [
+    "Tool current_date returned: Wednesday, 20 May 2026",
+    "Tool calculator returned: 2100.0"
+]
+
+## Example Controller Improvement
+
+Previously:
+- the model repeatedly called current_date
+- memory existed
+- workflow behavior did not change
+
+After controller improvements:
+- repeated completed tools were blocked
+- missing required tools were forced
+- memory influenced workflow behavior
+
+## Important Concepts Learned
+- memory-aware workflows
+- memory retrieval
+- memory-conditioned planning
+- controller-guided reasoning
+- workflow continuity
+- observation persistence
+
+## Important Insight
+
+Memory becomes valuable only when it changes workflow behavior.
+
+---
+
 # Current Learning Direction
 
 Current areas of focus:
@@ -223,8 +305,39 @@ Current areas of focus:
 - AI controller architectures
 - ReAct workflows
 - Semantic validation
+- Memory-aware workflows
 - AI workflow reliability
-- Memory and state management
+- State management
+
+---
+
+# Repository Structure
+
+agentic-ai-30-days/
+│
+├── setup/
+│   ├── setup_checklist.md
+│   └── environment setup files
+│
+├── notes/
+│   ├── day01.md
+│   ├── day02.md
+│   ├── day03.md
+│   ├── day04.md
+│   └── day05.md
+│
+├── resources/
+│
+├── projects/
+│
+├── day01-first-agent/
+├── day02-multi-tool-agent/
+├── day03-stateful-agent/
+├── day04-react-agent/
+├── day05-memory-agent/
+│
+├── README.md
+└── .gitignore
 
 ---
 
@@ -238,6 +351,8 @@ Current areas of focus:
 - Linux Mint
 - VS Code
 - ReAct workflow architecture
+- memory-aware workflows
+- controller-driven orchestration
 
 ---
 
@@ -266,7 +381,7 @@ while building publicly documented proof-of-work throughout the process.
 
 ---
 
-# Most Important Realization So Far
+# Most Important Realizations So Far
 
 Reliable AI systems are not built around perfect models.
 
@@ -277,4 +392,19 @@ Reliable AI systems are built around:
 - retries
 - state management
 - reasoning inspection
+- memory-aware execution
 - controller enforcement
+
+---
+
+# Future Direction
+
+Upcoming areas of exploration:
+- dynamic planning agents
+- vector databases
+- semantic memory retrieval
+- long-term memory
+- autonomous workflows
+- LangGraph
+- multi-agent orchestration
+- production-grade AI systems
