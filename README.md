@@ -11,9 +11,9 @@ The focus of this journey is not just using AI frameworks, but understanding how
 - retries and failure handling
 - reasoning-aware workflows
 - ReAct architecture
+- planning systems
+- planner-executor workflows
 - local LLM systems
-- memory-aware reasoning
-- controller-enforced reliability
 
 ---
 
@@ -52,6 +52,7 @@ By the end of 30 days, I aim to independently:
 | Day 3 | Stateful Retry Agent | ✅ |
 | Day 4 | ReAct Workflow Agent | ✅ |
 | Day 5 | Memory-Aware ReAct Agent | ✅ |
+| Day 6 | Dynamic Planning Agent | ✅ |
 
 ---
 
@@ -100,17 +101,6 @@ Built a controller-based AI workflow agent capable of:
 - stopping conditions are essential
 - AI workflows require validation
 
-## Example Capability
-
-Question:
-
-What day is it today and what is 18% of 4500?
-
-Final Output:
-
-Today is Friday, 15 May 2026.
-18% of 4500 is 810.0.
-
 ## Important Insight
 
 A reliable AI agent is a controlled workflow built around an unreliable model.
@@ -133,16 +123,6 @@ Built a stateful workflow agent capable of:
 - retry_count management
 - failure-aware execution
 - stopping conditions
-
-## Example Failure Tracking
-
-failure_history = [
-    {
-        "tool": "calculator",
-        "input": "twenty two percent of 6200",
-        "error": "ERROR: Invalid expression"
-    }
-]
 
 ## Key Concepts Learned
 - workflow state
@@ -176,40 +156,6 @@ Built a ReAct-style workflow agent capable of:
 - observation-driven planning
 - controller-side reasoning enforcement
 
-## ReAct Workflow
-
-Thought
-↓
-Action
-↓
-Observation
-↓
-Next Thought
-
-## Example Reasoning Trace
-
-{
-  "thought": "To answer the question, I first need today's date.",
-  "action": "current_date",
-  "input": ""
-}
-
-Observation:
-
-Tuesday, 19 May 2026
-
-Next reasoning:
-
-{
-  "thought": "Now I need to calculate 15% of 9600.",
-  "action": "calculator",
-  "input": "0.15 * 9600"
-}
-
-Observation:
-
-1440.0
-
 ## Important Concepts Learned
 - ReAct architecture
 - reasoning traces
@@ -242,45 +188,6 @@ Built a memory-aware AI workflow agent capable of:
 - controller-guided memory utilization
 - observation persistence across steps
 
-## Memory Workflow
-
-User Question
-      ↓
-Memory Retrieval
-      ↓
-Thought
-      ↓
-Action
-      ↓
-Tool Execution
-      ↓
-Observation
-      ↓
-Memory Update
-      ↓
-Next Thought
-      ↓
-Final Answer
-
-## Example Memory State
-
-memory_store = [
-    "Tool current_date returned: Wednesday, 20 May 2026",
-    "Tool calculator returned: 2100.0"
-]
-
-## Example Controller Improvement
-
-Previously:
-- the model repeatedly called current_date
-- memory existed
-- workflow behavior did not change
-
-After controller improvements:
-- repeated completed tools were blocked
-- missing required tools were forced
-- memory influenced workflow behavior
-
 ## Important Concepts Learned
 - memory-aware workflows
 - memory retrieval
@@ -295,6 +202,58 @@ Memory becomes valuable only when it changes workflow behavior.
 
 ---
 
+# Day 6 — Dynamic Planning Agent
+
+Built a planning-based AI workflow agent capable of:
+- explicit task planning
+- task decomposition
+- planner-executor workflows
+- task execution tracking
+- controller-side action validation
+- workflow progression management
+- controller-driven action correction
+
+## New Architectural Capabilities
+- task_plan workflow planning
+- completed_tasks execution tracking
+- planner-executor separation
+- task-aware validation
+- controller-side workflow correction
+- plan-aware execution
+
+## Planner-Executor Workflow
+
+User Goal
+      ↓
+Planner
+      ↓
+Task Plan
+      ↓
+Executor
+      ↓
+Observation
+      ↓
+Plan Update
+      ↓
+Final Summary
+
+## Important Concepts Learned
+- planner-executor architecture
+- explicit task planning
+- task decomposition
+- task progression tracking
+- action validation
+- workflow orchestration
+- plan-aware execution
+
+## Important Insight
+
+A planner defines what should happen.
+An executor performs actions.
+A controller verifies execution matches the plan.
+
+---
+
 # Current Learning Direction
 
 Current areas of focus:
@@ -306,8 +265,9 @@ Current areas of focus:
 - ReAct workflows
 - Semantic validation
 - Memory-aware workflows
+- Planning systems
+- Planner-executor workflows
 - AI workflow reliability
-- State management
 
 ---
 
@@ -324,7 +284,8 @@ agentic-ai-30-days/
 │   ├── day02.md
 │   ├── day03.md
 │   ├── day04.md
-│   └── day05.md
+│   ├── day05.md
+│   └── day06.md
 │
 ├── resources/
 │
@@ -335,6 +296,7 @@ agentic-ai-30-days/
 ├── day03-stateful-agent/
 ├── day04-react-agent/
 ├── day05-memory-agent/
+├── day06-planning-agent/
 │
 ├── README.md
 └── .gitignore
@@ -351,6 +313,7 @@ agentic-ai-30-days/
 - Linux Mint
 - VS Code
 - ReAct workflow architecture
+- planner-executor workflows
 - memory-aware workflows
 - controller-driven orchestration
 
@@ -393,6 +356,7 @@ Reliable AI systems are built around:
 - state management
 - reasoning inspection
 - memory-aware execution
+- explicit planning
 - controller enforcement
 
 ---
@@ -400,7 +364,7 @@ Reliable AI systems are built around:
 # Future Direction
 
 Upcoming areas of exploration:
-- dynamic planning agents
+- dynamic planning
 - vector databases
 - semantic memory retrieval
 - long-term memory
