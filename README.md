@@ -13,6 +13,7 @@ The focus of this journey is not just using AI frameworks, but understanding how
 - ReAct architecture
 - planning systems
 - planner-executor workflows
+- tool registries
 - local LLM systems
 
 ---
@@ -53,6 +54,7 @@ By the end of 30 days, I aim to independently:
 | Day 4 | ReAct Workflow Agent | ✅ |
 | Day 5 | Memory-Aware ReAct Agent | ✅ |
 | Day 6 | Dynamic Planning Agent | ✅ |
+| Day 7 | Tool Registry Agent | ✅ |
 
 ---
 
@@ -221,22 +223,6 @@ Built a planning-based AI workflow agent capable of:
 - controller-side workflow correction
 - plan-aware execution
 
-## Planner-Executor Workflow
-
-User Goal
-      ↓
-Planner
-      ↓
-Task Plan
-      ↓
-Executor
-      ↓
-Observation
-      ↓
-Plan Update
-      ↓
-Final Summary
-
 ## Important Concepts Learned
 - planner-executor architecture
 - explicit task planning
@@ -254,6 +240,53 @@ A controller verifies execution matches the plan.
 
 ---
 
+# Day 7 — Tool Registry Agent
+
+Built a tool-aware AI workflow agent capable of:
+- centralized tool management
+- dynamic tool selection
+- tool metadata reasoning
+- controller-side validation
+- fallback execution
+- scalable orchestration
+
+## New Architectural Capabilities
+- TOOL_REGISTRY architecture
+- tool metadata
+- tool descriptions
+- dynamic tool selection
+- controller fallback execution
+- scalable workflow orchestration
+
+## Tool Registry Structure
+
+TOOL_REGISTRY = {
+    "calculator": {
+        "function": calculator,
+        "description": "Performs simple math calculations.",
+        "input_type": "plain math expression string",
+        "example": "0.12 * 7500"
+    }
+}
+
+## Important Concepts Learned
+- tool registries
+- dynamic tool selection
+- workflow scalability
+- controller-side validation
+- fallback execution
+- tool-aware orchestration
+
+## Important Insight
+
+A scalable AI workflow system requires:
+- centralized tool management
+- dynamic tool selection
+- controller-side validation
+- tool-aware orchestration
+
+---
+
 # Current Learning Direction
 
 Current areas of focus:
@@ -267,6 +300,7 @@ Current areas of focus:
 - Memory-aware workflows
 - Planning systems
 - Planner-executor workflows
+- Tool registries
 - AI workflow reliability
 
 ---
@@ -276,8 +310,7 @@ Current areas of focus:
 agentic-ai-30-days/
 │
 ├── setup/
-│   ├── setup_checklist.md
-│   └── environment setup files
+│   └── setup_checklist.md
 │
 ├── notes/
 │   ├── day01.md
@@ -285,10 +318,10 @@ agentic-ai-30-days/
 │   ├── day03.md
 │   ├── day04.md
 │   ├── day05.md
-│   └── day06.md
+│   ├── day06.md
+│   └── day07.md
 │
 ├── resources/
-│
 ├── projects/
 │
 ├── day01-first-agent/
@@ -297,6 +330,7 @@ agentic-ai-30-days/
 ├── day04-react-agent/
 ├── day05-memory-agent/
 ├── day06-planning-agent/
+├── day07-tool-registry-agent/
 │
 ├── README.md
 └── .gitignore
@@ -315,6 +349,7 @@ agentic-ai-30-days/
 - ReAct workflow architecture
 - planner-executor workflows
 - memory-aware workflows
+- tool registries
 - controller-driven orchestration
 
 ---
@@ -357,6 +392,7 @@ Reliable AI systems are built around:
 - reasoning inspection
 - memory-aware execution
 - explicit planning
+- centralized tool management
 - controller enforcement
 
 ---
