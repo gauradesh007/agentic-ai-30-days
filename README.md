@@ -14,6 +14,7 @@ The focus of this journey is not just using AI frameworks, but understanding how
 - planning systems
 - planner-executor workflows
 - tool registries
+- retrieval-aware workflows
 - local LLM systems
 
 ---
@@ -55,6 +56,7 @@ By the end of 30 days, I aim to independently:
 | Day 5 | Memory-Aware ReAct Agent | ✅ |
 | Day 6 | Dynamic Planning Agent | ✅ |
 | Day 7 | Tool Registry Agent | ✅ |
+| Day 8 | Retrieval-Aware Agent | ✅ |
 
 ---
 
@@ -258,17 +260,6 @@ Built a tool-aware AI workflow agent capable of:
 - controller fallback execution
 - scalable workflow orchestration
 
-## Tool Registry Structure
-
-TOOL_REGISTRY = {
-    "calculator": {
-        "function": calculator,
-        "description": "Performs simple math calculations.",
-        "input_type": "plain math expression string",
-        "example": "0.12 * 7500"
-    }
-}
-
 ## Important Concepts Learned
 - tool registries
 - dynamic tool selection
@@ -287,6 +278,56 @@ A scalable AI workflow system requires:
 
 ---
 
+# Day 8 — Retrieval-Aware Agent
+
+Built a retrieval-aware AI workflow agent capable of:
+- structured memory storage
+- relevant memory retrieval
+- retrieval-aware reasoning
+- retrieval-enhanced fallback logic
+- context-aware workflow execution
+- retrieval-conditioned controller decisions
+
+## New Architectural Capabilities
+- MEMORY_DB structured memory
+- retrieval-aware reasoning
+- keyword-based memory retrieval
+- retrieval-conditioned execution
+- retrieval-enhanced fallback logic
+- retrieval-aware orchestration
+
+## Retrieval Workflow
+
+User Question
+      ↓
+Memory Retrieval
+      ↓
+Relevant Context
+      ↓
+Tool Selection
+      ↓
+Controller Validation
+      ↓
+Tool Execution
+      ↓
+Observation
+      ↓
+Final Summary
+
+## Important Concepts Learned
+- retrieval-aware workflows
+- structured memory databases
+- retrieval-augmented reasoning
+- retrieval-conditioned execution
+- primitive RAG architectures
+- retrieval-aware orchestration
+
+## Important Insight
+
+Retrieval improves reasoning context, but controllers still enforce workflow reliability.
+
+---
+
 # Current Learning Direction
 
 Current areas of focus:
@@ -301,6 +342,7 @@ Current areas of focus:
 - Planning systems
 - Planner-executor workflows
 - Tool registries
+- Retrieval-aware workflows
 - AI workflow reliability
 
 ---
@@ -319,7 +361,8 @@ agentic-ai-30-days/
 │   ├── day04.md
 │   ├── day05.md
 │   ├── day06.md
-│   └── day07.md
+│   ├── day07.md
+│   └── day08.md
 │
 ├── resources/
 ├── projects/
@@ -331,6 +374,7 @@ agentic-ai-30-days/
 ├── day05-memory-agent/
 ├── day06-planning-agent/
 ├── day07-tool-registry-agent/
+├── day08-retrieval-agent/
 │
 ├── README.md
 └── .gitignore
@@ -350,6 +394,7 @@ agentic-ai-30-days/
 - planner-executor workflows
 - memory-aware workflows
 - tool registries
+- retrieval-aware workflows
 - controller-driven orchestration
 
 ---
@@ -393,6 +438,7 @@ Reliable AI systems are built around:
 - memory-aware execution
 - explicit planning
 - centralized tool management
+- retrieval-aware orchestration
 - controller enforcement
 
 ---
@@ -400,11 +446,11 @@ Reliable AI systems are built around:
 # Future Direction
 
 Upcoming areas of exploration:
-- dynamic planning
 - vector databases
-- semantic memory retrieval
+- semantic retrieval
 - long-term memory
 - autonomous workflows
 - LangGraph
 - multi-agent orchestration
 - production-grade AI systems
+- advanced RAG architectures
