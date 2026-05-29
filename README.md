@@ -15,6 +15,7 @@ The focus of this journey is not just using AI frameworks, but understanding how
 - planner-executor workflows
 - tool registries
 - retrieval-aware workflows
+- reflection systems
 - local LLM systems
 
 ---
@@ -41,7 +42,7 @@ By the end of 30 days, I aim to independently:
 - GitHub
 - Ollama
 - Local LLMs
-- Workflow-based AI Controllers
+- Workflow-Based AI Controllers
 
 ---
 
@@ -57,12 +58,14 @@ By the end of 30 days, I aim to independently:
 | Day 6 | Dynamic Planning Agent | ✅ |
 | Day 7 | Tool Registry Agent | ✅ |
 | Day 8 | Retrieval-Aware Agent | ✅ |
+| Day 9 | Self-Reflecting Agent | ✅ |
 
 ---
 
 # Day 1 — First Tool-Using Agent
 
 Built a local AI agent using:
+
 - Ollama
 - Python
 - tool execution loop
@@ -70,6 +73,7 @@ Built a local AI agent using:
 - calculator tool
 
 ## Key Lessons
+
 - LLMs are unreliable without validation
 - JSON parsing frequently fails
 - the controller loop is the real agent
@@ -86,6 +90,7 @@ The controller and workflow orchestration are the actual intelligence system.
 # Day 2 — Multi-Tool Controller Agent
 
 Built a controller-based AI workflow agent capable of:
+
 - multi-tool orchestration
 - tool routing
 - JSON extraction
@@ -94,11 +99,13 @@ Built a controller-based AI workflow agent capable of:
 - state management
 
 ## Tools Used
+
 - calculator
 - current_date
 - text_length
 
 ## Key Concepts Learned
+
 - models are unreliable planners
 - controllers enforce reliability
 - workflow orchestration requires state
@@ -114,6 +121,7 @@ A reliable AI agent is a controlled workflow built around an unreliable model.
 # Day 3 — Stateful Retry Agent
 
 Built a stateful workflow agent capable of:
+
 - retry handling
 - failure tracking
 - workflow memory
@@ -122,6 +130,7 @@ Built a stateful workflow agent capable of:
 - incomplete-task reporting
 
 ## Features Added
+
 - tool_results state tracking
 - failure_history logging
 - retry_count management
@@ -129,6 +138,7 @@ Built a stateful workflow agent capable of:
 - stopping conditions
 
 ## Key Concepts Learned
+
 - workflow state
 - retry logic
 - failure-path testing
@@ -146,6 +156,7 @@ Reliable agents must be tested against failure paths.
 # Day 4 — ReAct Workflow Agent
 
 Built a ReAct-style workflow agent capable of:
+
 - explicit reasoning traces
 - Thought → Action → Observation loops
 - semantic validation
@@ -154,6 +165,7 @@ Built a ReAct-style workflow agent capable of:
 - workflow explainability
 
 ## New Architectural Capabilities
+
 - thought_history tracking
 - semantic calculator validation
 - reasoning-aware workflows
@@ -161,6 +173,7 @@ Built a ReAct-style workflow agent capable of:
 - controller-side reasoning enforcement
 
 ## Important Concepts Learned
+
 - ReAct architecture
 - reasoning traces
 - semantic validation
@@ -177,6 +190,7 @@ Reasoning traces improve explainability, but reasoning itself still requires val
 # Day 5 — Memory-Aware ReAct Agent
 
 Built a memory-aware AI workflow agent capable of:
+
 - storing workflow memory
 - retrieving previous observations
 - using memory during reasoning
@@ -185,6 +199,7 @@ Built a memory-aware AI workflow agent capable of:
 - improving controller-guided execution
 
 ## New Architectural Capabilities
+
 - memory_store workflow memory
 - memory retrieval
 - memory updates
@@ -193,6 +208,7 @@ Built a memory-aware AI workflow agent capable of:
 - observation persistence across steps
 
 ## Important Concepts Learned
+
 - memory-aware workflows
 - memory retrieval
 - memory-conditioned planning
@@ -209,6 +225,7 @@ Memory becomes valuable only when it changes workflow behavior.
 # Day 6 — Dynamic Planning Agent
 
 Built a planning-based AI workflow agent capable of:
+
 - explicit task planning
 - task decomposition
 - planner-executor workflows
@@ -218,6 +235,7 @@ Built a planning-based AI workflow agent capable of:
 - controller-driven action correction
 
 ## New Architectural Capabilities
+
 - task_plan workflow planning
 - completed_tasks execution tracking
 - planner-executor separation
@@ -226,6 +244,7 @@ Built a planning-based AI workflow agent capable of:
 - plan-aware execution
 
 ## Important Concepts Learned
+
 - planner-executor architecture
 - explicit task planning
 - task decomposition
@@ -237,7 +256,9 @@ Built a planning-based AI workflow agent capable of:
 ## Important Insight
 
 A planner defines what should happen.
+
 An executor performs actions.
+
 A controller verifies execution matches the plan.
 
 ---
@@ -245,6 +266,7 @@ A controller verifies execution matches the plan.
 # Day 7 — Tool Registry Agent
 
 Built a tool-aware AI workflow agent capable of:
+
 - centralized tool management
 - dynamic tool selection
 - tool metadata reasoning
@@ -253,6 +275,7 @@ Built a tool-aware AI workflow agent capable of:
 - scalable orchestration
 
 ## New Architectural Capabilities
+
 - TOOL_REGISTRY architecture
 - tool metadata
 - tool descriptions
@@ -261,6 +284,7 @@ Built a tool-aware AI workflow agent capable of:
 - scalable workflow orchestration
 
 ## Important Concepts Learned
+
 - tool registries
 - dynamic tool selection
 - workflow scalability
@@ -271,6 +295,7 @@ Built a tool-aware AI workflow agent capable of:
 ## Important Insight
 
 A scalable AI workflow system requires:
+
 - centralized tool management
 - dynamic tool selection
 - controller-side validation
@@ -281,6 +306,7 @@ A scalable AI workflow system requires:
 # Day 8 — Retrieval-Aware Agent
 
 Built a retrieval-aware AI workflow agent capable of:
+
 - structured memory storage
 - relevant memory retrieval
 - retrieval-aware reasoning
@@ -289,6 +315,7 @@ Built a retrieval-aware AI workflow agent capable of:
 - retrieval-conditioned controller decisions
 
 ## New Architectural Capabilities
+
 - MEMORY_DB structured memory
 - retrieval-aware reasoning
 - keyword-based memory retrieval
@@ -298,6 +325,7 @@ Built a retrieval-aware AI workflow agent capable of:
 
 ## Retrieval Workflow
 
+```text
 User Question
       ↓
 Memory Retrieval
@@ -313,8 +341,10 @@ Tool Execution
 Observation
       ↓
 Final Summary
+```
 
 ## Important Concepts Learned
+
 - retrieval-aware workflows
 - structured memory databases
 - retrieval-augmented reasoning
@@ -328,9 +358,71 @@ Retrieval improves reasoning context, but controllers still enforce workflow rel
 
 ---
 
+# Day 9 — Self-Reflecting Agent
+
+Built a self-reflecting AI workflow agent capable of:
+
+- evaluating its own actions
+- inspecting tool results
+- generating workflow reflections
+- maintaining reflection history
+- performing primitive self-critique
+- improving workflow observability
+- introducing workflow self-evaluation
+
+## New Architectural Capabilities
+
+- reflection_history
+- reflection-aware execution
+- workflow self-evaluation
+- observation inspection
+- reflection logging
+- reflection-driven observability
+
+## Reflection Workflow
+
+```text
+User Question
+      ↓
+Memory Retrieval
+      ↓
+Relevant Context
+      ↓
+Tool Selection
+      ↓
+Tool Execution
+      ↓
+Observation
+      ↓
+Reflection
+      ↓
+Reflection History
+      ↓
+Final Summary
+```
+
+## Important Concepts Learned
+
+- self-reflecting workflows
+- workflow evaluation
+- reflection history
+- observation inspection
+- execution analysis
+- primitive self-critique
+- reflection-aware orchestration
+
+## Important Insight
+
+A reliable AI workflow should not only execute actions.
+
+It should also evaluate the quality of those actions through reflection.
+
+---
+
 # Current Learning Direction
 
 Current areas of focus:
+
 - Agentic AI
 - Workflow orchestration
 - Multi-tool AI agents
@@ -343,12 +435,14 @@ Current areas of focus:
 - Planner-executor workflows
 - Tool registries
 - Retrieval-aware workflows
+- Reflection systems
 - AI workflow reliability
 
 ---
 
 # Repository Structure
 
+```text
 agentic-ai-30-days/
 │
 ├── setup/
@@ -362,7 +456,8 @@ agentic-ai-30-days/
 │   ├── day05.md
 │   ├── day06.md
 │   ├── day07.md
-│   └── day08.md
+│   ├── day08.md
+│   └── day09.md
 │
 ├── resources/
 ├── projects/
@@ -375,9 +470,11 @@ agentic-ai-30-days/
 ├── day06-planning-agent/
 ├── day07-tool-registry-agent/
 ├── day08-retrieval-agent/
+├── day09-reflection-agent/
 │
 ├── README.md
 └── .gitignore
+```
 
 ---
 
@@ -395,6 +492,7 @@ agentic-ai-30-days/
 - memory-aware workflows
 - tool registries
 - retrieval-aware workflows
+- reflection systems
 - controller-driven orchestration
 
 ---
@@ -402,12 +500,15 @@ agentic-ai-30-days/
 # Portfolio & Links
 
 🌐 Portfolio:
+
 https://gauradesh007.github.io
 
 💼 LinkedIn:
+
 https://www.linkedin.com/in/adesh-gaur/
 
 📂 GitHub:
+
 https://github.com/gauradesh007
 
 ---
@@ -415,9 +516,11 @@ https://github.com/gauradesh007
 # Long-Term Goal
 
 The long-term objective of this journey is to evolve from:
+
 - enterprise integration engineering
 
 to:
+
 - AI workflow and agent systems engineering
 
 while building publicly documented proof-of-work throughout the process.
@@ -429,6 +532,7 @@ while building publicly documented proof-of-work throughout the process.
 Reliable AI systems are not built around perfect models.
 
 Reliable AI systems are built around:
+
 - controlled workflows
 - validation
 - observations
@@ -439,6 +543,7 @@ Reliable AI systems are built around:
 - explicit planning
 - centralized tool management
 - retrieval-aware orchestration
+- reflection-aware evaluation
 - controller enforcement
 
 ---
@@ -446,11 +551,14 @@ Reliable AI systems are built around:
 # Future Direction
 
 Upcoming areas of exploration:
+
 - vector databases
 - semantic retrieval
 - long-term memory
 - autonomous workflows
+- reflection-driven adaptation
 - LangGraph
 - multi-agent orchestration
 - production-grade AI systems
 - advanced RAG architectures
+- self-improving agent systems
