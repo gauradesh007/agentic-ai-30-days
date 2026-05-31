@@ -16,6 +16,7 @@ The focus of this journey is not just using AI frameworks, but understanding how
 - tool registries
 - retrieval-aware workflows
 - reflection systems
+- self-correcting workflows
 - local LLM systems
 
 ---
@@ -59,6 +60,7 @@ By the end of 30 days, I aim to independently:
 | Day 7 | Tool Registry Agent | ✅ |
 | Day 8 | Retrieval-Aware Agent | ✅ |
 | Day 9 | Self-Reflecting Agent | ✅ |
+| Day 10 | Self-Correcting Agent | ✅ |
 
 ---
 
@@ -419,6 +421,71 @@ It should also evaluate the quality of those actions through reflection.
 
 ---
 
+# Day 10 — Self-Correcting Agent
+
+Built a self-correcting AI workflow agent capable of:
+
+- detecting failed tool executions
+- generating correction recommendations
+- retrying failed actions automatically
+- maintaining correction history
+- maintaining retry history
+- combining reflection and correction
+- performing primitive self-healing
+
+## New Architectural Capabilities
+
+- correction_history
+- retry_history
+- correction generation
+- automated retries
+- self-healing workflows
+- reflection-driven recovery
+
+## Self-Correcting Workflow
+
+```text
+User Question
+      ↓
+Memory Retrieval
+      ↓
+Relevant Context
+      ↓
+Tool Selection
+      ↓
+Controller Validation
+      ↓
+Tool Execution
+      ↓
+Observation
+      ↓
+Reflection
+      ↓
+Correction
+      ↓
+Retry
+      ↓
+Final Summary
+```
+
+## Important Concepts Learned
+
+- self-correcting workflows
+- correction systems
+- retry mechanisms
+- self-healing execution
+- reflection-driven recovery
+- controller-guided correction
+- primitive autonomous recovery
+
+## Important Insight
+
+A workflow should not stop after failure.
+
+It should reflect, generate a correction, retry, and recover whenever possible.
+
+---
+
 # Current Learning Direction
 
 Current areas of focus:
@@ -436,6 +503,7 @@ Current areas of focus:
 - Tool registries
 - Retrieval-aware workflows
 - Reflection systems
+- Self-correcting workflows
 - AI workflow reliability
 
 ---
@@ -457,7 +525,8 @@ agentic-ai-30-days/
 │   ├── day06.md
 │   ├── day07.md
 │   ├── day08.md
-│   └── day09.md
+│   ├── day09.md
+│   └── day10.md
 │
 ├── resources/
 ├── projects/
@@ -471,6 +540,7 @@ agentic-ai-30-days/
 ├── day07-tool-registry-agent/
 ├── day08-retrieval-agent/
 ├── day09-reflection-agent/
+├── day10-self-correcting-agent/
 │
 ├── README.md
 └── .gitignore
@@ -493,6 +563,7 @@ agentic-ai-30-days/
 - tool registries
 - retrieval-aware workflows
 - reflection systems
+- self-correcting systems
 - controller-driven orchestration
 
 ---
@@ -544,6 +615,7 @@ Reliable AI systems are built around:
 - centralized tool management
 - retrieval-aware orchestration
 - reflection-aware evaluation
+- self-correcting behavior
 - controller enforcement
 
 ---
@@ -552,13 +624,14 @@ Reliable AI systems are built around:
 
 Upcoming areas of exploration:
 
+- multi-agent systems
+- agent communication
+- task delegation
 - vector databases
 - semantic retrieval
 - long-term memory
 - autonomous workflows
-- reflection-driven adaptation
 - LangGraph
-- multi-agent orchestration
 - production-grade AI systems
 - advanced RAG architectures
 - self-improving agent systems
