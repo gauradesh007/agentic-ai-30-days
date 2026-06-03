@@ -67,6 +67,14 @@ Every day introduces a new architectural capability that builds upon the previou
 
 ✅ First Delegation Traceability System
 
+✅ First Agent Collaboration Workflow
+
+✅ First Shared Goal Workflow
+
+✅ First Contribution Tracking System
+
+✅ First Role-Based Collaboration System
+
 ---
 
 # Architecture Evolution
@@ -75,30 +83,30 @@ The journey has progressively introduced increasingly sophisticated workflow cap
 
 ```text
 Tool Execution
-      ↓
+↓
 Controller
-      ↓
+↓
 Retry Logic
-      ↓
+↓
 ReAct
-      ↓
+↓
 Memory
-      ↓
+↓
 Planning
-      ↓
+↓
 Tool Registry
-      ↓
+↓
 Retrieval
-      ↓
+↓
 Reflection
-      ↓
+↓
 Self-Correction
-      ↓
+↓
 Multi-Agent Coordination
-      ↓
-Agent Communication
-      ↓
+↓
 Agent Delegation
+↓
+Agent Collaboration
 ```
 
 Each stage builds directly on the capabilities introduced earlier.
@@ -320,18 +328,14 @@ A workflow should recover from failures whenever possible.
 
 # Phase 3 — Multi-Agent Systems
 
-Days 11–12
+Days 11–13
 
 Focus:
 
-* specialist agents
-* agent communication
-* delegation
-* collaboration
-
-Goal:
-
-Move from single-agent workflows to coordinated multi-agent systems.
+- agent routing
+- agent communication
+- agent delegation
+- agent collaboration
 
 ---
 
@@ -396,6 +400,39 @@ Delegation assigns responsibility.
 
 ---
 
+### Day 13 — Agent Collaboration
+
+Introduced:
+
+- collaboration workflows
+- collaboration history
+- contribution tracking
+- agent roles
+- shared goals
+- collaborative reporting
+
+Architecture:
+
+```text
+Shared Goal
+      ↓
+Lead Agent
+      ↓
+Collaborating Agents
+      ↓
+Contributions
+      ↓
+Final Report
+```
+
+Key Insight:
+
+A powerful multi-agent system is not just agents delegating work.
+
+It is multiple agents contributing toward a shared goal while maintaining clear roles and traceable contributions.
+
+---
+
 # Current Learning Direction
 
 ## Agent Architecture
@@ -414,6 +451,7 @@ Delegation assigns responsibility.
 * Agent Communication
 * Agent Delegation
 * Agent Collaboration
+* Shared Goal Workflows
 
 ---
 
@@ -448,7 +486,8 @@ agentic-ai-30-days/
 │   ├── day09.md
 │   ├── day10.md
 │   ├── day11.md
-│   └── day12.md
+│   ├── day12.md
+│   └── day13.md
 │
 ├── day01-first-agent/
 ├── day02-multi-tool-agent/
@@ -462,6 +501,7 @@ agentic-ai-30-days/
 ├── day10-self-correcting-agent/
 ├── day11-multi-agent-foundation/
 ├── day12-agent-delegation/
+├── day13-agent-collaboration/
 │
 ├── README.md
 └── .gitignore
@@ -482,6 +522,9 @@ agentic-ai-30-days/
 * Reflection Systems
 * Multi-Agent Architectures
 * Delegation Workflows
+* Agent Collaboration
+* Contribution Tracking
+* Shared Goal Coordination
 
 ---
 
@@ -536,6 +579,8 @@ Reliable AI systems are built around:
 * coordination
 * communication
 * delegation
+* collaboration
+* shared goals
 
 Every day in this journey has reinforced that principle.
 
@@ -545,9 +590,10 @@ Every day in this journey has reinforced that principle.
 
 ### Multi-Agent Systems
 
-* Agent Collaboration
+* Agent Coordination
 * Agent Negotiation
 * Agent Teams
+* Collaborative Planning
 
 ### Knowledge Systems
 
