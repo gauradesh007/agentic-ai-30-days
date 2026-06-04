@@ -75,6 +75,14 @@ Every day introduces a new architectural capability that builds upon the previou
 
 ✅ First Role-Based Collaboration System
 
+✅ First Agent Coordination Workflow
+
+✅ First Workflow Status Tracking System
+
+✅ First Coordination Validation Layer
+
+✅ First Coordinator Decision System
+
 ---
 
 # Architecture Evolution
@@ -83,30 +91,32 @@ The journey has progressively introduced increasingly sophisticated workflow cap
 
 ```text
 Tool Execution
-↓
+      ↓
 Controller
-↓
+      ↓
 Retry Logic
-↓
+      ↓
 ReAct
-↓
+      ↓
 Memory
-↓
+      ↓
 Planning
-↓
+      ↓
 Tool Registry
-↓
+      ↓
 Retrieval
-↓
+      ↓
 Reflection
-↓
+      ↓
 Self-Correction
-↓
+      ↓
 Multi-Agent Coordination
-↓
+      ↓
 Agent Delegation
-↓
+      ↓
 Agent Collaboration
+      ↓
+Agent Coordination
 ```
 
 Each stage builds directly on the capabilities introduced earlier.
@@ -326,16 +336,17 @@ A workflow should recover from failures whenever possible.
 
 ---
 
-# Phase 3 — Multi-Agent Systems
+## Phase 3 — Multi-Agent Systems
 
-Days 11–13
+Days 11–14
 
 Focus:
 
-- agent routing
-- agent communication
-- agent delegation
-- agent collaboration
+* agent routing
+* agent communication
+* agent delegation
+* agent collaboration
+* agent coordination
 
 ---
 
@@ -404,12 +415,12 @@ Delegation assigns responsibility.
 
 Introduced:
 
-- collaboration workflows
-- collaboration history
-- contribution tracking
-- agent roles
-- shared goals
-- collaborative reporting
+* collaboration workflows
+* collaboration history
+* contribution tracking
+* agent roles
+* shared goals
+* collaborative reporting
 
 Architecture:
 
@@ -433,6 +444,43 @@ It is multiple agents contributing toward a shared goal while maintaining clear 
 
 ---
 
+### Day 14 — Agent Coordination
+
+Introduced:
+
+* coordinator agents
+* coordination validation
+* workflow status tracking
+* completed agent tracking
+* coordinator final decisions
+* failure-aware orchestration
+
+Architecture:
+
+```text
+Coordinator Agent
+      ↓
+Validate Agent
+      ↓
+Execute Agent
+      ↓
+Track Result
+      ↓
+Update Status
+      ↓
+Evaluate Workflow
+      ↓
+Final Decision
+```
+
+Key Insight:
+
+A reliable multi-agent system requires coordination.
+
+Coordination requires validation, status tracking, and final decision making.
+
+---
+
 # Current Learning Direction
 
 ## Agent Architecture
@@ -445,13 +493,14 @@ It is multiple agents contributing toward a shared goal while maintaining clear 
 
 ---
 
-## Multi-Agent Systems
+### Multi-Agent Systems
 
 * Agent Routing
 * Agent Communication
 * Agent Delegation
 * Agent Collaboration
-* Shared Goal Workflows
+* Agent Coordination
+* Workflow Status Tracking
 
 ---
 
@@ -487,7 +536,8 @@ agentic-ai-30-days/
 │   ├── day10.md
 │   ├── day11.md
 │   ├── day12.md
-│   └── day13.md
+│   ├── day13.md
+│   └── day14.md
 │
 ├── day01-first-agent/
 ├── day02-multi-tool-agent/
@@ -502,6 +552,7 @@ agentic-ai-30-days/
 ├── day11-multi-agent-foundation/
 ├── day12-agent-delegation/
 ├── day13-agent-collaboration/
+├── day14-agent-coordination/
 │
 ├── README.md
 └── .gitignore
@@ -525,6 +576,9 @@ agentic-ai-30-days/
 * Agent Collaboration
 * Contribution Tracking
 * Shared Goal Coordination
+* Agent Coordination
+* Workflow Status Tracking
+* Coordination Validation
 
 ---
 
@@ -581,6 +635,9 @@ Reliable AI systems are built around:
 * delegation
 * collaboration
 * shared goals
+* workflow monitoring
+* coordination validation
+* coordinator decision making
 
 Every day in this journey has reinforced that principle.
 
@@ -590,10 +647,10 @@ Every day in this journey has reinforced that principle.
 
 ### Multi-Agent Systems
 
-* Agent Coordination
-* Agent Negotiation
 * Agent Teams
 * Collaborative Planning
+* Hierarchical Coordination
+* Agent Negotiation
 
 ### Knowledge Systems
 
@@ -623,5 +680,6 @@ AI Engineering is not about making one model smarter.
 
 It is about designing reliable systems of tools,
 memory, planning, retrieval, reflection,
-delegation, and coordination around imperfect models.
+delegation, collaboration, coordination,
+validation, and decision making around imperfect models.
 ```
