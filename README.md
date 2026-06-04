@@ -83,6 +83,16 @@ Every day introduces a new architectural capability that builds upon the previou
 
 ✅ First Coordinator Decision System
 
+✅ First Agent Team
+
+✅ First Team Goal System
+
+✅ First Team Validation Layer
+
+✅ First Team Performance Tracking System
+
+✅ First Team Decision System
+
 ---
 
 # Architecture Evolution
@@ -117,6 +127,9 @@ Agent Delegation
 Agent Collaboration
       ↓
 Agent Coordination
+      ↓
+Agent Teams
+
 ```
 
 Each stage builds directly on the capabilities introduced earlier.
@@ -338,7 +351,7 @@ A workflow should recover from failures whenever possible.
 
 ## Phase 3 — Multi-Agent Systems
 
-Days 11–14
+Days 11–15
 
 Focus:
 
@@ -347,6 +360,7 @@ Focus:
 * agent delegation
 * agent collaboration
 * agent coordination
+* agent teams
 
 ---
 
@@ -481,6 +495,43 @@ Coordination requires validation, status tracking, and final decision making.
 
 ---
 
+### Day 15 — Agent Teams
+
+Introduced:
+
+* agent teams
+* team goals
+* team roles
+* team validation
+* team performance tracking
+* team decision making
+
+Architecture:
+
+```text
+Mission
+      ↓
+Agent Team
+      ↓
+Team Members
+      ↓
+Contributions
+      ↓
+Team Performance
+      ↓
+Final Team Decision
+      ↓
+Final Report
+```
+
+Key Insight:
+
+A powerful multi-agent system is not just coordinated agents.
+
+It is organized teams working toward a shared mission while tracking performance and making collective decisions.
+
+---
+
 # Current Learning Direction
 
 ## Agent Architecture
@@ -500,7 +551,8 @@ Coordination requires validation, status tracking, and final decision making.
 * Agent Delegation
 * Agent Collaboration
 * Agent Coordination
-* Workflow Status Tracking
+* Agent Teams
+* Team Performance Tracking
 
 ---
 
@@ -537,7 +589,8 @@ agentic-ai-30-days/
 │   ├── day11.md
 │   ├── day12.md
 │   ├── day13.md
-│   └── day14.md
+│   ├── day14.md
+│   └── day15.md
 │
 ├── day01-first-agent/
 ├── day02-multi-tool-agent/
@@ -552,7 +605,8 @@ agentic-ai-30-days/
 ├── day11-multi-agent-foundation/
 ├── day12-agent-delegation/
 ├── day13-agent-collaboration/
-├── day14-agent-coordination/
+├── day13-agent-coordination/
+├── day14-agent-teams/
 │
 ├── README.md
 └── .gitignore
@@ -579,6 +633,10 @@ agentic-ai-30-days/
 * Agent Coordination
 * Workflow Status Tracking
 * Coordination Validation
+* Agent Teams
+* Team Validation
+* Team Performance Tracking
+* Team Decision Systems
 
 ---
 
@@ -638,6 +696,10 @@ Reliable AI systems are built around:
 * workflow monitoring
 * coordination validation
 * coordinator decision making
+* team goals
+* team validation
+* team performance tracking
+* team decision making
 
 Every day in this journey has reinforced that principle.
 
@@ -647,10 +709,10 @@ Every day in this journey has reinforced that principle.
 
 ### Multi-Agent Systems
 
-* Agent Teams
 * Collaborative Planning
 * Hierarchical Coordination
 * Agent Negotiation
+* Multi-Team Systems
 
 ### Knowledge Systems
 
@@ -676,10 +738,13 @@ Every day in this journey has reinforced that principle.
 # Most Important Insight So Far
 
 ```text
+
 AI Engineering is not about making one model smarter.
 
 It is about designing reliable systems of tools,
 memory, planning, retrieval, reflection,
 delegation, collaboration, coordination,
-validation, and decision making around imperfect models.
+teams, validation, performance tracking,
+and decision making around imperfect models.
+
 ```
