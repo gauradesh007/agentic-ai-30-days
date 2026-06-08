@@ -107,6 +107,14 @@ Every day introduces a new architectural capability that builds upon the previou
 
 ✅ First Duplicate Prevention Layer
 
+✅ First Memory Ranking System
+
+✅ First Best-Match Retrieval System
+
+✅ First Retrieval Threshold Validation Layer
+
+✅ First Relevance Scoring System
+
 ---
 
 # Architecture Evolution
@@ -145,6 +153,8 @@ Agent Coordination
 Agent Teams
       ↓
 Persistent Memory
+      ↓
+Memory Ranking
 
 ```
 
@@ -556,13 +566,14 @@ Focus:
 
 * persistent memory
 * memory retrieval
+* memory ranking
 * semantic retrieval
 * embeddings
 * vector databases
 
 Goal:
 
-Build AI systems capable of storing, retrieving, and reasoning over long-term knowledge.
+Build AI systems capable of storing, retrieving, ranking, and reasoning over long-term knowledge.
 
 ---
 
@@ -603,6 +614,45 @@ Persistent memory is the foundation of long-term memory.
 
 An intelligent system should remember information even after the program stops running.
 
+---
+
+### Day 17 — Memory Ranking & Retrieval
+
+Introduced:
+
+* memory ranking
+* relevance scoring
+* best-match retrieval
+* threshold-based retrieval
+* retrieval quality control
+
+Architecture:
+
+```text
+User Query
+      ↓
+Memory Search
+      ↓
+Keyword Matching
+      ↓
+Relevance Score
+      ↓
+Ranking
+      ↓
+Best Match
+      ↓
+Threshold Validation
+      ↓
+Final Result
+```
+
+Key Insight:
+
+Memory retrieval is not just about finding information.
+
+It is about finding the most relevant information and filtering out weak matches.
+
+---
 
 # Current Learning Direction
 
@@ -632,7 +682,8 @@ An intelligent system should remember information even after the program stops r
 
 * Persistent Memory
 * Memory Retrieval
-* Semantic Search
+* Memory Ranking
+* Semantic Retrieval
 * Embeddings
 * Vector Databases
 
@@ -673,7 +724,8 @@ agentic-ai-30-days/
 │   ├── day13.md
 │   ├── day14.md
 │   ├── day15.md
-│   └── day16.md
+│   ├── day16.md
+│   └── day17.md
 │
 ├── day01-first-agent/
 ├── day02-multi-tool-agent/
@@ -690,7 +742,8 @@ agentic-ai-30-days/
 ├── day13-agent-collaboration/
 ├── day14-agent-coordination/
 ├── day15-agent-teams/
-├── day16-persistent-memory/
+├── day15-persistent-memory/
+├── day17-memory-ranking/
 │
 ├── README.md
 └── .gitignore
@@ -725,6 +778,11 @@ agentic-ai-30-days/
 * Long-Term Memory Systems
 * Memory Retrieval
 * Keyword Search
+* persistent memory
+* searchable memory
+* memory ranking
+* relevance scoring
+* retrieval quality control
 
 ---
 
@@ -791,6 +849,9 @@ Reliable AI systems are built around:
 * persistent memory
 * memory retrieval
 * searchable memory
+* memory ranking
+* relevance scoring
+* retrieval quality control
 
 Every day in this journey has reinforced that principle.
 
@@ -833,10 +894,10 @@ Every day in this journey has reinforced that principle.
 AI Engineering is not about making one model smarter.
 
 It is about designing reliable systems of tools,
-memory, retrieval, planning, reflection,
-delegation, collaboration, coordination,
-teams, validation, performance tracking,
-persistent knowledge, and decision making
-around imperfect models.
+memory, retrieval, ranking, planning,
+reflection, delegation, collaboration,
+coordination, teams, validation,
+performance tracking, persistent knowledge,
+and decision making around imperfect models.
 
 ```
