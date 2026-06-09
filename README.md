@@ -125,6 +125,16 @@ Every day introduces a new architectural capability that builds upon the previou
 
 ✅ First Meaning-Based Retrieval System
 
+✅ First Embedding System
+
+✅ First Query Embedding
+
+✅ First Memory Embedding
+
+✅ First Vector Distance Retrieval System
+
+✅ First Embedding-Based Retrieval Workflow
+
 ---
 
 # Architecture Evolution
@@ -167,7 +177,8 @@ Persistent Memory
 Memory Ranking
       ↓
 Memory Retrieval
-
+      ↓
+Embeddings
 ```
 
 Each stage builds directly on the capabilities introduced earlier.
@@ -705,6 +716,41 @@ It is about understanding meaning and retrieving the most relevant knowledge.
 
 ---
 
+### Day 19 — Embeddings
+
+Introduced:
+
+* embeddings
+* vector representations
+* vector distance calculations
+* memory embeddings
+* query embeddings
+* embedding-based retrieval
+
+Architecture:
+
+```text
+User Query
+      ↓
+Embedding
+      ↓
+Memory Embeddings
+      ↓
+Distance Calculation
+      ↓
+Vector Ranking
+      ↓
+Best Match
+```
+
+Key Insight:
+
+Embeddings are the bridge between text and vector search.
+
+Modern AI retrieval systems work because meaning can be represented as vectors.
+
+---
+
 # Current Learning Direction
 
 ## Agent Architecture
@@ -777,7 +823,8 @@ agentic-ai-30-days/
 │   ├── day15.md
 │   ├── day16.md
 │   ├── day17.md
-│   └── day18.md
+│   ├── day18.md
+│   └── day19.md
 │
 ├── day01-first-agent/
 ├── day02-multi-tool-agent/
@@ -797,6 +844,7 @@ agentic-ai-30-days/
 ├── day16-persistent-memory/
 ├── day17-memory-ranking/
 ├── day18-semantic-retrieval/
+├── day19-embeddings/
 │
 ├── README.md
 └── .gitignore
@@ -840,6 +888,10 @@ agentic-ai-30-days/
 * Semantic Expansion
 * Semantic Ranking
 * Meaning-Based Search
+* Embeddings
+* Vector Representations
+* Vector Distance
+* Embedding Retrieval
 
 ---
 
@@ -912,6 +964,9 @@ Reliable AI systems are built around:
 * semantic retrieval
 * meaning-based search
 * semantic ranking
+* embeddings
+* vector representations
+* vector retrieval
 
 Every day in this journey has reinforced that principle.
 
@@ -928,9 +983,8 @@ Every day in this journey has reinforced that principle.
 
 ### Knowledge Systems
 
-* Semantic Retrieval
-* Embeddings
 * Vector Databases
+* Semantic Search
 * Advanced RAG
 
 ### Autonomous Systems
@@ -954,10 +1008,11 @@ Every day in this journey has reinforced that principle.
 AI Engineering is not about making one model smarter.
 
 It is about designing reliable systems of tools,
-memory, retrieval, ranking, semantic understanding,
-planning, reflection, delegation, collaboration,
-coordination, teams, validation,
-performance tracking, persistent knowledge,
-and decision making around imperfect models.
+memory, retrieval, ranking, embeddings,
+semantic understanding, planning, reflection,
+delegation, collaboration, coordination,
+teams, validation, performance tracking,
+persistent knowledge, and decision making
+around imperfect models.
 
 ```
