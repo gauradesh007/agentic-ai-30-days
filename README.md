@@ -115,6 +115,16 @@ Every day introduces a new architectural capability that builds upon the previou
 
 ✅ First Relevance Scoring System
 
+✅ First Semantic Retrieval System
+
+✅ First Semantic Expansion Engine
+
+✅ First Semantic Ranking Engine
+
+✅ First Semantic Threshold Validation Layer
+
+✅ First Meaning-Based Retrieval System
+
 ---
 
 # Architecture Evolution
@@ -155,6 +165,8 @@ Agent Teams
 Persistent Memory
       ↓
 Memory Ranking
+      ↓
+Memory Retrieval
 
 ```
 
@@ -654,6 +666,45 @@ It is about finding the most relevant information and filtering out weak matches
 
 ---
 
+### Day 18 — Semantic Retrieval
+
+Introduced:
+
+* semantic retrieval
+* semantic expansion
+* semantic grouping
+* semantic memory scoring
+* semantic ranking
+* semantic threshold validation
+
+Architecture:
+
+```text
+User Query
+      ↓
+Semantic Expansion
+      ↓
+Meaning Groups
+      ↓
+Semantic Scoring
+      ↓
+Ranking
+      ↓
+Best Semantic Match
+      ↓
+Threshold Validation
+      ↓
+Final Result
+```
+
+Key Insight:
+
+Semantic retrieval is not about matching exact words.
+
+It is about understanding meaning and retrieving the most relevant knowledge.
+
+---
+
 # Current Learning Direction
 
 ## Agent Architecture
@@ -725,7 +776,8 @@ agentic-ai-30-days/
 │   ├── day14.md
 │   ├── day15.md
 │   ├── day16.md
-│   └── day17.md
+│   ├── day17.md
+│   └── day18.md
 │
 ├── day01-first-agent/
 ├── day02-multi-tool-agent/
@@ -742,8 +794,9 @@ agentic-ai-30-days/
 ├── day13-agent-collaboration/
 ├── day14-agent-coordination/
 ├── day15-agent-teams/
-├── day15-persistent-memory/
+├── day16-persistent-memory/
 ├── day17-memory-ranking/
+├── day18-semantic-retrieval/
 │
 ├── README.md
 └── .gitignore
@@ -783,6 +836,10 @@ agentic-ai-30-days/
 * memory ranking
 * relevance scoring
 * retrieval quality control
+* Semantic Retrieval
+* Semantic Expansion
+* Semantic Ranking
+* Meaning-Based Search
 
 ---
 
@@ -852,6 +909,9 @@ Reliable AI systems are built around:
 * memory ranking
 * relevance scoring
 * retrieval quality control
+* semantic retrieval
+* meaning-based search
+* semantic ranking
 
 Every day in this journey has reinforced that principle.
 
@@ -894,8 +954,8 @@ Every day in this journey has reinforced that principle.
 AI Engineering is not about making one model smarter.
 
 It is about designing reliable systems of tools,
-memory, retrieval, ranking, planning,
-reflection, delegation, collaboration,
+memory, retrieval, ranking, semantic understanding,
+planning, reflection, delegation, collaboration,
 coordination, teams, validation,
 performance tracking, persistent knowledge,
 and decision making around imperfect models.

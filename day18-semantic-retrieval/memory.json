@@ -1,0 +1,14 @@
+[
+    {
+        "topic": "math",
+        "content": "Percentage calculations use decimal multiplication."
+    },
+    {
+        "topic": "date",
+        "content": "Current date returns the real system date."
+    },
+    {
+        "topic": "text",
+        "content": "Text length counts characters in a string."
+    }
+]
