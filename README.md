@@ -135,6 +135,18 @@ Every day introduces a new architectural capability that builds upon the previou
 
 ✅ First Embedding-Based Retrieval Workflow
 
+✅ First Vector Database
+
+✅ First ChromaDB Collection
+
+✅ First Metadata-Aware Retrieval System
+
+✅ First Persistent Vector Database
+
+✅ First Similarity Search Engine
+
+✅ First Nearest-Neighbor Retrieval System
+
 ---
 
 # Architecture Evolution
@@ -176,9 +188,11 @@ Persistent Memory
       ↓
 Memory Ranking
       ↓
-Memory Retrieval
+Semantic Retrieval
       ↓
 Embeddings
+      ↓
+Vector Database
 ```
 
 Each stage builds directly on the capabilities introduced earlier.
@@ -751,6 +765,40 @@ Modern AI retrieval systems work because meaning can be represented as vectors.
 
 ---
 
+### Day 20 — ChromaDB Vector Database
+
+Introduced:
+
+* vector databases
+* ChromaDB collections
+* metadata-aware retrieval
+* similarity search
+* nearest-neighbor retrieval
+* persistent vector storage
+
+Architecture:
+
+```text
+Document
+      ↓
+Embedding
+      ↓
+Vector Database
+      ↓
+Similarity Search
+      ↓
+Best Match
+```
+
+Key Insight:
+
+A vector database transforms embeddings into a searchable knowledge system.
+
+Embeddings represent meaning.
+Vector databases make that meaning retrievable.
+
+---
+
 # Current Learning Direction
 
 ## Agent Architecture
@@ -783,6 +831,7 @@ Modern AI retrieval systems work because meaning can be represented as vectors.
 * Semantic Retrieval
 * Embeddings
 * Vector Databases
+* Similarity Search
 
 ---
 
@@ -824,7 +873,8 @@ agentic-ai-30-days/
 │   ├── day16.md
 │   ├── day17.md
 │   ├── day18.md
-│   └── day19.md
+│   ├── day19.md
+│   └── day20.md
 │
 ├── day01-first-agent/
 ├── day02-multi-tool-agent/
@@ -844,7 +894,8 @@ agentic-ai-30-days/
 ├── day16-persistent-memory/
 ├── day17-memory-ranking/
 ├── day18-semantic-retrieval/
-├── day19-embeddings/
+├── day19 -embeddings/
+├── day20-chromadb/
 │
 ├── README.md
 └── .gitignore
@@ -892,6 +943,11 @@ agentic-ai-30-days/
 * Vector Representations
 * Vector Distance
 * Embedding Retrieval
+* ChromaDB
+* Vector Databases
+* Similarity Search
+* Metadata Retrieval
+* Persistent Vector Storage
 
 ---
 
@@ -966,7 +1022,10 @@ Reliable AI systems are built around:
 * semantic ranking
 * embeddings
 * vector representations
-* vector retrieval
+* vector databases
+* similarity search
+* metadata-aware retrieval
+* persistent vector storage
 
 Every day in this journey has reinforced that principle.
 
@@ -983,9 +1042,10 @@ Every day in this journey has reinforced that principle.
 
 ### Knowledge Systems
 
-* Vector Databases
-* Semantic Search
 * Advanced RAG
+* Hybrid Search
+* Document Chunking
+* Long-Term Agent Memory
 
 ### Autonomous Systems
 
@@ -1009,9 +1069,10 @@ AI Engineering is not about making one model smarter.
 
 It is about designing reliable systems of tools,
 memory, retrieval, ranking, embeddings,
-semantic understanding, planning, reflection,
-delegation, collaboration, coordination,
-teams, validation, performance tracking,
+vector databases, semantic understanding,
+planning, reflection, delegation,
+collaboration, coordination, teams,
+validation, performance tracking,
 persistent knowledge, and decision making
 around imperfect models.
 
