@@ -149,6 +149,24 @@ Every day introduces a new architectural capability that builds upon the previou
 
 ---
 
+## Framework & Production Agent Milestones
+
+✅ First CrewAI Agent
+
+✅ First CrewAI Task
+
+✅ First CrewAI Crew
+
+✅ First Multi-Agent Crew
+
+✅ First Context Passing Workflow
+
+✅ First CrewAI Delegation Workflow
+
+✅ First CrewAI Validation Workflow
+
+---
+
 # Architecture Evolution
 
 The journey has progressively introduced increasingly sophisticated workflow capabilities.
@@ -193,6 +211,8 @@ Semantic Retrieval
 Embeddings
       ↓
 Vector Database
+      ↓
+CrewAI
 ```
 
 Each stage builds directly on the capabilities introduced earlier.
@@ -799,6 +819,62 @@ Vector databases make that meaning retrievable.
 
 ---
 
+# Phase 5 — Frameworks & Production Agent Systems
+
+Days 21–25
+
+Focus:
+
+* CrewAI
+* AutoGen
+* LangGraph
+* Agent Frameworks
+* Production Workflows
+
+Goal:
+
+Understand how production frameworks implement the agent architectures built manually during the first 20 days.
+
+---
+
+### Day 21 — CrewAI Foundations
+
+Introduced:
+
+* CrewAI Agents
+* CrewAI Tasks
+* CrewAI Crews
+* Context Passing
+* Multi-Agent Crews
+* Delegation Workflows
+* Validation Workflows
+
+Architecture:
+
+```text
+Crew
+      ↓
+Agent
+      ↓
+Task
+      ↓
+Context
+      ↓
+Execution
+      ↓
+Result
+```
+
+Key Insight:
+
+Frameworks do not replace architecture knowledge.
+
+They automate it.
+
+Understanding the underlying architecture remains the most valuable skill.
+
+---
+
 # Current Learning Direction
 
 ## Agent Architecture
@@ -832,6 +908,16 @@ Vector databases make that meaning retrievable.
 * Embeddings
 * Vector Databases
 * Similarity Search
+
+---
+
+### Frameworks & Production Agents
+
+* CrewAI
+* AutoGen
+* LangGraph
+* Agent Orchestration
+* Production Workflows
 
 ---
 
@@ -874,7 +960,8 @@ agentic-ai-30-days/
 │   ├── day17.md
 │   ├── day18.md
 │   ├── day19.md
-│   └── day20.md
+│   ├── day20.md
+│   └── day21.md
 │
 ├── day01-first-agent/
 ├── day02-multi-tool-agent/
@@ -895,7 +982,8 @@ agentic-ai-30-days/
 ├── day17-memory-ranking/
 ├── day18-semantic-retrieval/
 ├── day19 -embeddings/
-├── day20-chromadb/
+├── day20 -chromadb/
+├── day20-crewai/
 │
 ├── README.md
 └── .gitignore
@@ -948,6 +1036,11 @@ agentic-ai-30-days/
 * Similarity Search
 * Metadata Retrieval
 * Persistent Vector Storage
+* CrewAI
+* Agent Frameworks
+* Context Passing
+* Multi-Agent Crews
+* Validation Workflows
 
 ---
 
@@ -1026,6 +1119,10 @@ Reliable AI systems are built around:
 * similarity search
 * metadata-aware retrieval
 * persistent vector storage
+* framework orchestration
+* context passing
+* framework-based delegation
+* framework-based validation
 
 Every day in this journey has reinforced that principle.
 
@@ -1055,8 +1152,10 @@ Every day in this journey has reinforced that principle.
 
 ### Production Systems
 
+* AutoGen
 * LangGraph
-* CrewAI
+* CrewAI Tools
+* Hierarchical Crews
 * Production Agent Architectures
 
 ---
@@ -1072,8 +1171,8 @@ memory, retrieval, ranking, embeddings,
 vector databases, semantic understanding,
 planning, reflection, delegation,
 collaboration, coordination, teams,
-validation, performance tracking,
-persistent knowledge, and decision making
-around imperfect models.
+framework orchestration, validation,
+performance tracking, persistent knowledge,
+and decision making around imperfect models.
 
 ```
