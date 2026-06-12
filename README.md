@@ -165,6 +165,22 @@ Every day introduces a new architectural capability that builds upon the previou
 
 ✅ First CrewAI Validation Workflow
 
+✅ First AutoGen Agent
+
+✅ First AutoGen Conversation
+
+✅ First Multi-Agent AutoGen Workflow
+
+✅ First RoundRobin Group Chat
+
+✅ First AutoGen Reviewer Agent
+
+✅ First Conversation Termination Workflow
+
+✅ First Role-Constrained Conversation Workflow
+
+✅ First Role Drift Analysis
+
 ---
 
 # Architecture Evolution
@@ -213,6 +229,8 @@ Embeddings
 Vector Database
       ↓
 CrewAI
+      ↓
+AutoGen
 ```
 
 Each stage builds directly on the capabilities introduced earlier.
@@ -875,6 +893,45 @@ Understanding the underlying architecture remains the most valuable skill.
 
 ---
 
+### Day 22 — AutoGen Foundations
+
+Introduced:
+
+* AutoGen Agents
+* Agent Conversations
+* RoundRobin Group Chat
+* Multi-Agent Conversations
+* Reviewer Agents
+* Termination Conditions
+* Role-Constrained Conversations
+* Role Drift Analysis
+
+Architecture:
+
+```text
+User
+      ↓
+Agent
+      ↕
+Agent
+      ↕
+Agent
+      ↓
+Conversation
+      ↓
+Result
+```
+
+Key Insight:
+
+CrewAI organizes work through tasks.
+
+AutoGen organizes work through conversations.
+
+Understanding both approaches is essential for building production multi-agent systems.
+
+---
+
 # Current Learning Direction
 
 ## Agent Architecture
@@ -915,8 +972,8 @@ Understanding the underlying architecture remains the most valuable skill.
 
 * CrewAI
 * AutoGen
-* LangGraph
-* Agent Orchestration
+* Agent Conversations
+* Multi-Agent Frameworks
 * Production Workflows
 
 ---
@@ -961,7 +1018,8 @@ agentic-ai-30-days/
 │   ├── day18.md
 │   ├── day19.md
 │   ├── day20.md
-│   └── day21.md
+│   ├── day21.md
+│   └── day22.md
 │
 ├── day01-first-agent/
 ├── day02-multi-tool-agent/
@@ -983,7 +1041,8 @@ agentic-ai-30-days/
 ├── day18-semantic-retrieval/
 ├── day19 -embeddings/
 ├── day20 -chromadb/
-├── day20-crewai/
+├── day21 -crewai/
+├── day22-autogen/
 │
 ├── README.md
 └── .gitignore
@@ -1041,6 +1100,11 @@ agentic-ai-30-days/
 * Context Passing
 * Multi-Agent Crews
 * Validation Workflows
+* AutoGen
+* AgentChat
+* RoundRobinGroupChat
+* Conversation Workflows
+* Termination Conditions
 
 ---
 
@@ -1123,6 +1187,11 @@ Reliable AI systems are built around:
 * context passing
 * framework-based delegation
 * framework-based validation
+* conversation-based orchestration
+* role constraints
+* role drift
+* conversation termination
+* multi-agent dialogue
 
 Every day in this journey has reinforced that principle.
 
@@ -1152,10 +1221,10 @@ Every day in this journey has reinforced that principle.
 
 ### Production Systems
 
-* AutoGen
 * LangGraph
 * CrewAI Tools
-* Hierarchical Crews
+* AutoGen Memory
+* Hierarchical Agent Systems
 * Production Agent Architectures
 
 ---
@@ -1171,8 +1240,9 @@ memory, retrieval, ranking, embeddings,
 vector databases, semantic understanding,
 planning, reflection, delegation,
 collaboration, coordination, teams,
-framework orchestration, validation,
-performance tracking, persistent knowledge,
-and decision making around imperfect models.
+framework orchestration, conversation management,
+validation, performance tracking,
+persistent knowledge, and decision making
+around imperfect models.
 
 ```
