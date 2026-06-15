@@ -181,6 +181,20 @@ Every day introduces a new architectural capability that builds upon the previou
 
 ✅ First Role Drift Analysis
 
+✅ First LangGraph Workflow
+
+✅ First Workflow State Graph
+
+✅ First Multi-Node Graph
+
+✅ First Conditional Routing Workflow
+
+✅ First Revision Workflow
+
+✅ First State-Driven Agent Workflow
+
+✅ First Graph-Based Decision System
+
 ---
 
 # Architecture Evolution
@@ -231,6 +245,9 @@ Vector Database
 CrewAI
       ↓
 AutoGen
+      ↓
+LangGraph
+
 ```
 
 Each stage builds directly on the capabilities introduced earlier.
@@ -932,6 +949,42 @@ Understanding both approaches is essential for building production multi-agent s
 
 ---
 
+### Day 23 — LangGraph Foundations
+
+Introduced:
+
+* workflow state
+* graph nodes
+* graph edges
+* conditional routing
+* revision workflows
+* state-driven execution
+
+Architecture:
+
+```text
+State
+      ↓
+Node
+      ↓
+State Update
+      ↓
+Decision
+      ↓
+Next Node
+```
+
+Key Insight:
+
+CrewAI organizes work through tasks.
+
+AutoGen organizes work through conversations.
+
+LangGraph organizes work through state and workflow decisions.
+
+---
+
+
 # Current Learning Direction
 
 ## Agent Architecture
@@ -972,8 +1025,9 @@ Understanding both approaches is essential for building production multi-agent s
 
 * CrewAI
 * AutoGen
-* Agent Conversations
-* Multi-Agent Frameworks
+* LangGraph
+* Agent Orchestration
+* Workflow State Management
 * Production Workflows
 
 ---
@@ -1019,7 +1073,8 @@ agentic-ai-30-days/
 │   ├── day19.md
 │   ├── day20.md
 │   ├── day21.md
-│   └── day22.md
+│   ├── day22.md
+│   └── day23.md
 │
 ├── day01-first-agent/
 ├── day02-multi-tool-agent/
@@ -1039,10 +1094,11 @@ agentic-ai-30-days/
 ├── day16-persistent-memory/
 ├── day17-memory-ranking/
 ├── day18-semantic-retrieval/
-├── day19 -embeddings/
-├── day20 -chromadb/
-├── day21 -crewai/
-├── day22-autogen/
+├── day19-embeddings/
+├── day20-chromadb/
+├── day21-crewai/
+├── day22-crewai/
+├── day23-langgraph/
 │
 ├── README.md
 └── .gitignore
@@ -1105,6 +1161,11 @@ agentic-ai-30-days/
 * RoundRobinGroupChat
 * Conversation Workflows
 * Termination Conditions
+* LangGraph
+* StateGraph
+* Workflow State Management
+* Conditional Routing
+* Graph-Based Workflows
 
 ---
 
@@ -1192,6 +1253,11 @@ Reliable AI systems are built around:
 * role drift
 * conversation termination
 * multi-agent dialogue
+* workflow state
+* conditional routing
+* graph orchestration
+* state-driven decisions
+* revision workflows
 
 Every day in this journey has reinforced that principle.
 
@@ -1221,10 +1287,11 @@ Every day in this journey has reinforced that principle.
 
 ### Production Systems
 
-* LangGraph
+* LangGraph + LLMs
 * CrewAI Tools
 * AutoGen Memory
-* Hierarchical Agent Systems
+* Human-in-the-Loop Systems
+* Multi-Agent Graphs
 * Production Agent Architectures
 
 ---
@@ -1241,8 +1308,8 @@ vector databases, semantic understanding,
 planning, reflection, delegation,
 collaboration, coordination, teams,
 framework orchestration, conversation management,
-validation, performance tracking,
-persistent knowledge, and decision making
-around imperfect models.
+workflow state management, validation,
+performance tracking, persistent knowledge,
+and decision making around imperfect models.
 
 ```
