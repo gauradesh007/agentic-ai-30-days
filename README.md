@@ -195,6 +195,23 @@ Every day introduces a new architectural capability that builds upon the previou
 
 ✅ First Graph-Based Decision System
 
+✅ First LangGraph + LLM Workflow
+
+✅ First Dynamic State Update System
+
+✅ First Multi-LLM Workflow Graph
+
+✅ First LLM-Based Review Workflow
+
+✅ First Conditional LLM Routing System
+
+✅ First Revision Workflow
+
+✅ First Controlled LLM Output Pattern
+
+✅ First Self-Correcting Graph Workflow
+
+
 ---
 
 # Architecture Evolution
@@ -247,6 +264,8 @@ CrewAI
 AutoGen
       ↓
 LangGraph
+      ↓
+LangGraph + LLMs
 
 ```
 
@@ -984,6 +1003,48 @@ LangGraph organizes work through state and workflow decisions.
 
 ---
 
+### Day 24 — LangGraph + LLM Workflows
+
+Introduced:
+
+* LLM-powered graph nodes
+* dynamic state updates
+* multi-LLM workflows
+* conditional LLM routing
+* review workflows
+* revision workflows
+* controlled LLM outputs
+
+Architecture:
+
+```text
+State
+      ↓
+Research Node
+      ↓
+LLM
+      ↓
+Writer Node
+      ↓
+LLM
+      ↓
+Review Node
+      ↓
+Decision
+      ↓
+Revision Node
+```
+
+Key Insight:
+
+State controls the workflow.
+
+LLMs generate the content.
+
+Reliable AI systems require controlled outputs so workflow decisions remain predictable.
+
+---
+
 
 # Current Learning Direction
 
@@ -1074,7 +1135,9 @@ agentic-ai-30-days/
 │   ├── day20.md
 │   ├── day21.md
 │   ├── day22.md
-│   └── day23.md
+│   ├── day23.md
+│   └── day24.md
+
 │
 ├── day01-first-agent/
 ├── day02-multi-tool-agent/
@@ -1099,6 +1162,7 @@ agentic-ai-30-days/
 ├── day21-crewai/
 ├── day22-crewai/
 ├── day23-langgraph/
+├── day24-langgraph-llm/
 │
 ├── README.md
 └── .gitignore
@@ -1166,6 +1230,12 @@ agentic-ai-30-days/
 * Workflow State Management
 * Conditional Routing
 * Graph-Based Workflows
+* ChatOllama
+* LangGraph + LLMs
+* Dynamic State Updates
+* Conditional LLM Routing
+* Revision Workflows
+* Controlled LLM Outputs
 
 ---
 
@@ -1258,6 +1328,12 @@ Reliable AI systems are built around:
 * graph orchestration
 * state-driven decisions
 * revision workflows
+* dynamic state updates
+* llm-driven workflows
+* controlled outputs
+* conditional routing
+* workflow recovery
+* self-correcting graphs
 
 Every day in this journey has reinforced that principle.
 
@@ -1287,10 +1363,9 @@ Every day in this journey has reinforced that principle.
 
 ### Production Systems
 
-* LangGraph + LLMs
-* CrewAI Tools
-* AutoGen Memory
+* LangGraph Agents
 * Human-in-the-Loop Systems
+* Tool Calling Workflows
 * Multi-Agent Graphs
 * Production Agent Architectures
 
@@ -1308,8 +1383,9 @@ vector databases, semantic understanding,
 planning, reflection, delegation,
 collaboration, coordination, teams,
 framework orchestration, conversation management,
-workflow state management, validation,
-performance tracking, persistent knowledge,
-and decision making around imperfect models.
+workflow state management, controlled outputs,
+validation, performance tracking,
+persistent knowledge, and decision making
+around imperfect models.
 
 ```
