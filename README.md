@@ -211,6 +211,21 @@ Every day introduces a new architectural capability that builds upon the previou
 
 ✅ First Self-Correcting Graph Workflow
 
+✅ First Multi-Agent LangGraph Workflow
+
+✅ First Shared State Agent System
+
+✅ First Multi-Agent Review Loop
+
+✅ First Revision Counter Workflow
+
+✅ First Final Decision Agent
+
+✅ First Workflow Recovery System
+
+✅ First Production-Style Agent Workflow
+
+✅ First Multi-Agent Self-Correcting Workflow
 
 ---
 
@@ -266,7 +281,8 @@ AutoGen
 LangGraph
       ↓
 LangGraph + LLMs
-
+      ↓
+Multi-Agent LangGraph
 ```
 
 Each stage builds directly on the capabilities introduced earlier.
@@ -1045,6 +1061,49 @@ Reliable AI systems require controlled outputs so workflow decisions remain pred
 
 ---
 
+### Day 25 — Multi-Agent LangGraph Workflows
+
+Introduced:
+
+* multi-agent graph workflows
+* shared state collaboration
+* review loops
+* revision workflows
+* final decision systems
+* workflow recovery
+* self-correcting agent systems
+
+Architecture:
+
+```text
+Research Agent
+      ↓
+Writer Agent
+      ↓
+Reviewer Agent
+      ↓
+Decision
+      ├── Approved
+      │      ↓
+      │     END
+      │
+      └── Needs Revision
+             ↓
+      Revision Loop
+             ↓
+      Writer Agent
+```
+
+Key Insight:
+
+Agents generate work.
+
+Workflow logic determines whether that work is trusted.
+
+Reliable AI systems require review, recovery,
+and explicit decision-making before completion.
+
+---
 
 # Current Learning Direction
 
@@ -1087,8 +1146,11 @@ Reliable AI systems require controlled outputs so workflow decisions remain pred
 * CrewAI
 * AutoGen
 * LangGraph
+* Multi-Agent LangGraph
 * Agent Orchestration
 * Workflow State Management
+* Review Loops
+* Workflow Recovery
 * Production Workflows
 
 ---
@@ -1136,8 +1198,8 @@ agentic-ai-30-days/
 │   ├── day21.md
 │   ├── day22.md
 │   ├── day23.md
-│   └── day24.md
-
+│   ├── day24.md
+│   └── day25.md
 │
 ├── day01-first-agent/
 ├── day02-multi-tool-agent/
@@ -1163,6 +1225,7 @@ agentic-ai-30-days/
 ├── day22-crewai/
 ├── day23-langgraph/
 ├── day24-langgraph-llm/
+├── day25-multi-agent-langgraph/
 │
 ├── README.md
 └── .gitignore
@@ -1236,6 +1299,12 @@ agentic-ai-30-days/
 * Conditional LLM Routing
 * Revision Workflows
 * Controlled LLM Outputs
+* Multi-Agent LangGraph
+* Shared State Systems
+* Review Loops
+* Revision Workflows
+* Workflow Recovery
+* Final Decision Systems
 
 ---
 
@@ -1334,6 +1403,12 @@ Reliable AI systems are built around:
 * conditional routing
 * workflow recovery
 * self-correcting graphs
+* shared state collaboration
+* workflow recovery
+* review loops
+* revision limits
+* final decision systems
+* self-correcting workflows
 
 Every day in this journey has reinforced that principle.
 
@@ -1363,11 +1438,11 @@ Every day in this journey has reinforced that principle.
 
 ### Production Systems
 
-* LangGraph Agents
-* Human-in-the-Loop Systems
-* Tool Calling Workflows
-* Multi-Agent Graphs
-* Production Agent Architectures
+* Human-in-the-Loop Workflows
+* Tool Calling Agents
+* Memory-Aware Agents
+* RAG Integration
+* End-to-End Agent Systems
 
 ---
 
@@ -1384,6 +1459,7 @@ planning, reflection, delegation,
 collaboration, coordination, teams,
 framework orchestration, conversation management,
 workflow state management, controlled outputs,
+review loops, workflow recovery,
 validation, performance tracking,
 persistent knowledge, and decision making
 around imperfect models.
