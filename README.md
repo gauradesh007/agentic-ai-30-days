@@ -227,6 +227,22 @@ Every day introduces a new architectural capability that builds upon the previou
 
 ✅ First Multi-Agent Self-Correcting Workflow
 
+✅ First Human-in-the-Loop Workflow
+
+✅ First Human Approval Node
+
+✅ First Human Rejection Workflow
+
+✅ First Human Rejection Counter
+
+✅ First Workflow Governance Layer
+
+✅ First Human-Controlled Recovery Workflow
+
+✅ First Human Approval Gate
+
+✅ First Human Oversight Agent System
+
 ---
 
 # Architecture Evolution
@@ -283,6 +299,8 @@ LangGraph
 LangGraph + LLMs
       ↓
 Multi-Agent LangGraph
+      ↓
+Human-in-the-Loop Workflows
 ```
 
 Each stage builds directly on the capabilities introduced earlier.
@@ -1105,6 +1123,45 @@ and explicit decision-making before completion.
 
 ---
 
+### Day 26 — Human-in-the-Loop Workflows
+
+Introduced:
+
+* human approval nodes
+* human rejection handling
+* workflow governance
+* approval gates
+* rejection counters
+* human-controlled recovery
+* workflow oversight
+
+Architecture:
+
+```text
+Research Agent
+      ↓
+Writer Agent
+      ↓
+Reviewer Agent
+      ↓
+Final Decision Agent
+      ↓
+Human Approval
+      ├── APPROVE → END
+      └── REJECT → Revision Path
+```
+
+Key Insight:
+
+AI can generate recommendations.
+
+AI can review recommendations.
+
+But in many production systems,
+humans remain responsible for the final decision.
+
+---
+
 # Current Learning Direction
 
 ## Agent Architecture
@@ -1147,10 +1204,10 @@ and explicit decision-making before completion.
 * AutoGen
 * LangGraph
 * Multi-Agent LangGraph
+* Human-in-the-Loop Workflows
+* Workflow Governance
 * Agent Orchestration
 * Workflow State Management
-* Review Loops
-* Workflow Recovery
 * Production Workflows
 
 ---
@@ -1199,7 +1256,8 @@ agentic-ai-30-days/
 │   ├── day22.md
 │   ├── day23.md
 │   ├── day24.md
-│   └── day25.md
+│   ├── day25.md
+│   └── day26.md
 │
 ├── day01-first-agent/
 ├── day02-multi-tool-agent/
@@ -1226,6 +1284,7 @@ agentic-ai-30-days/
 ├── day23-langgraph/
 ├── day24-langgraph-llm/
 ├── day25-multi-agent-langgraph/
+├── day26-human-in-the-loop/
 │
 ├── README.md
 └── .gitignore
@@ -1305,6 +1364,11 @@ agentic-ai-30-days/
 * Revision Workflows
 * Workflow Recovery
 * Final Decision Systems
+* Human-in-the-Loop Workflows
+* Human Approval Gates
+* Workflow Governance
+* Human Oversight Systems
+* Approval Routing
 
 ---
 
@@ -1409,6 +1473,11 @@ Reliable AI systems are built around:
 * revision limits
 * final decision systems
 * self-correcting workflows
+* human oversight
+* approval gates
+* workflow governance
+* human-controlled recovery
+* rejection limits
 
 Every day in this journey has reinforced that principle.
 
@@ -1438,11 +1507,11 @@ Every day in this journey has reinforced that principle.
 
 ### Production Systems
 
-* Human-in-the-Loop Workflows
 * Tool Calling Agents
 * Memory-Aware Agents
 * RAG Integration
 * End-to-End Agent Systems
+* Agent Systems Architect (Capstone)
 
 ---
 
