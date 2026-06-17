@@ -5,4 +5,4 @@ __pycache__/
 *.pyc
 .ipynb_checkpoints/
 # ChromaDB
-chroma_memory/
+chroma_memory/.vscode/
