@@ -243,6 +243,22 @@ Every day introduces a new architectural capability that builds upon the previou
 
 ✅ First Human Oversight Agent System
 
+✅ First Tool Calling Agent
+
+✅ First Tool Selection Agent
+
+✅ First Tool Execution Workflow
+
+✅ First LLM Tool Routing System
+
+✅ First Tool Selection Guard
+
+✅ First Tool Validation Layer
+
+✅ First Reliable Tool Calling Workflow
+
+✅ First Production Tool Agent
+
 ---
 
 # Architecture Evolution
@@ -301,6 +317,8 @@ LangGraph + LLMs
 Multi-Agent LangGraph
       ↓
 Human-in-the-Loop Workflows
+      ↓
+Tool Calling Agents
 ```
 
 Each stage builds directly on the capabilities introduced earlier.
@@ -1162,6 +1180,45 @@ humans remain responsible for the final decision.
 
 ---
 
+### Day 27 — Tool Calling Agents
+
+Introduced:
+
+* tool selection agents
+* tool execution workflows
+* LLM tool routing
+* tool guards
+* tool validation
+* production tool patterns
+
+Architecture:
+
+```text
+Question
+      ↓
+Tool Selection Agent
+      ↓
+Tool Guard
+      ↓
+Tool Execution Agent
+      ↓
+Tool Review Agent
+      ↓
+Answer
+```
+
+Key Insight:
+
+LLMs can choose tools.
+
+But reliable systems do not blindly trust LLM decisions.
+
+Production agent systems use guards, validation,
+and deterministic checks to ensure tools are selected
+and executed correctly.
+
+---
+
 # Current Learning Direction
 
 ## Agent Architecture
@@ -1205,6 +1262,7 @@ humans remain responsible for the final decision.
 * LangGraph
 * Multi-Agent LangGraph
 * Human-in-the-Loop Workflows
+* Tool Calling Agents
 * Workflow Governance
 * Agent Orchestration
 * Workflow State Management
@@ -1214,13 +1272,17 @@ humans remain responsible for the final decision.
 
 ## Upcoming Topics
 
-* Long-Term Memory
-* Vector Databases
-* Semantic Retrieval
-* Advanced RAG
-* Autonomous Workflows
-* LangGraph
-* Production Agent Systems
+### Day 28
+* Memory-Aware Agents
+* Retrieval-Augmented Generation (RAG)
+
+### Day 29
+* End-to-End Agent Workflows
+* Multi-Agent Production Systems
+
+### Day 30
+* Agent Systems Architect (Capstone)
+* Production Agent Design Patterns
 
 ---
 
@@ -1257,7 +1319,8 @@ agentic-ai-30-days/
 │   ├── day23.md
 │   ├── day24.md
 │   ├── day25.md
-│   └── day26.md
+│   ├── day26.md
+│   └── day27.md
 │
 ├── day01-first-agent/
 ├── day02-multi-tool-agent/
@@ -1285,6 +1348,7 @@ agentic-ai-30-days/
 ├── day24-langgraph-llm/
 ├── day25-multi-agent-langgraph/
 ├── day26-human-in-the-loop/
+├── day27-tool-calling-agents/
 │
 ├── README.md
 └── .gitignore
@@ -1369,6 +1433,11 @@ agentic-ai-30-days/
 * Workflow Governance
 * Human Oversight Systems
 * Approval Routing
+* Tool Calling Agents
+* Tool Routing
+* Tool Validation
+* Guard Rails
+* Deterministic Validation
 
 ---
 
@@ -1478,6 +1547,11 @@ Reliable AI systems are built around:
 * workflow governance
 * human-controlled recovery
 * rejection limits
+* tool selection
+* tool routing
+* tool validation
+* guard rails
+* workflow reliability
 
 Every day in this journey has reinforced that principle.
 
@@ -1507,10 +1581,9 @@ Every day in this journey has reinforced that principle.
 
 ### Production Systems
 
-* Tool Calling Agents
 * Memory-Aware Agents
 * RAG Integration
-* End-to-End Agent Systems
+* End-to-End Agent Workflows
 * Agent Systems Architect (Capstone)
 
 ---
@@ -1529,8 +1602,8 @@ collaboration, coordination, teams,
 framework orchestration, conversation management,
 workflow state management, controlled outputs,
 review loops, workflow recovery,
-validation, performance tracking,
-persistent knowledge, and decision making
+tool execution, tool validation,
+human oversight, and decision making
 around imperfect models.
 
 ```
