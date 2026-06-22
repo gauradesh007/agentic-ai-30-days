@@ -259,6 +259,22 @@ Every day introduces a new architectural capability that builds upon the previou
 
 ✅ First Production Tool Agent
 
+✅ First Memory-Aware Agent
+
+✅ First Retrieval-Augmented Generation (RAG) Workflow
+
+✅ First ChromaDB Retrieval Agent
+
+✅ First Knowledge Retrieval Workflow
+
+✅ First RAG Validation Layer
+
+✅ First RAG Revision Loop
+
+✅ First Final RAG Decision System
+
+✅ First Production Memory-Aware Agent
+
 ---
 
 # Architecture Evolution
@@ -319,6 +335,8 @@ Multi-Agent LangGraph
 Human-in-the-Loop Workflows
       ↓
 Tool Calling Agents
+      ↓
+Memory + RAG Agents
 ```
 
 Each stage builds directly on the capabilities introduced earlier.
@@ -1243,6 +1261,45 @@ and executed correctly.
 
 ---
 
+### Day 28 — Memory + RAG Agents
+
+Introduced:
+
+* ChromaDB retrieval
+* memory-aware agents
+* retrieval-augmented generation (RAG)
+* answer validation
+* revision loops
+* final RAG decisions
+
+Architecture:
+
+```text
+Question
+      ↓
+Retriever Agent
+      ↓
+Retrieved Knowledge
+      ↓
+Answer Agent
+      ↓
+Answer Review Agent
+      ↓
+Final RAG Decision
+```
+
+Key Insight:
+
+Memory makes agents smarter.
+
+But retrieval alone is not enough.
+
+Reliable RAG systems require validation,
+revision, and governance before retrieved
+knowledge can be trusted.
+
+---
+
 ### Knowledge Systems
 
 * Persistent Memory
@@ -1263,26 +1320,27 @@ and executed correctly.
 * Multi-Agent LangGraph
 * Human-in-the-Loop Workflows
 * Tool Calling Agents
+* Memory-Aware Agents
+* Retrieval-Augmented Generation (RAG)
 * Workflow Governance
 * Agent Orchestration
-* Workflow State Management
 * Production Workflows
 
 ---
 
 ## Upcoming Topics
 
-### Day 28
-* Memory-Aware Agents
-* Retrieval-Augmented Generation (RAG)
-
 ### Day 29
+
 * End-to-End Agent Workflows
 * Multi-Agent Production Systems
+* Tool + Memory Integration
 
 ### Day 30
+
 * Agent Systems Architect (Capstone)
 * Production Agent Design Patterns
+* Enterprise AI System Architecture
 
 ---
 
@@ -1320,7 +1378,8 @@ agentic-ai-30-days/
 │   ├── day24.md
 │   ├── day25.md
 │   ├── day26.md
-│   └── day27.md
+│   ├── day27.md
+│   └── day28.md
 │
 ├── day01-first-agent/
 ├── day02-multi-tool-agent/
@@ -1349,6 +1408,7 @@ agentic-ai-30-days/
 ├── day25-multi-agent-langgraph/
 ├── day26-human-in-the-loop/
 ├── day27-tool-calling-agents/
+├── day28-memory-rag-agent/
 │
 ├── README.md
 └── .gitignore
@@ -1438,7 +1498,12 @@ agentic-ai-30-days/
 * Tool Validation
 * Guard Rails
 * Deterministic Validation
-
+* ChromaDB
+* Retrieval-Augmented Generation (RAG)
+* Memory-Aware Agents
+* Knowledge Retrieval
+* RAG Validation
+* Revision Workflows
 ---
 
 # Portfolio & Links
@@ -1552,6 +1617,11 @@ Reliable AI systems are built around:
 * tool validation
 * guard rails
 * workflow reliability
+* retrieval
+* knowledge grounding
+* rag validation
+* answer revision
+* memory-aware agents
 
 Every day in this journey has reinforced that principle.
 
@@ -1602,7 +1672,7 @@ collaboration, coordination, teams,
 framework orchestration, conversation management,
 workflow state management, controlled outputs,
 review loops, workflow recovery,
-tool execution, tool validation,
+tool execution, retrieval validation,
 human oversight, and decision making
 around imperfect models.
 
